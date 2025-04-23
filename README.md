@@ -1,52 +1,32 @@
-# Chatbot Deployment with Flask and JavaScript
+# 🌾 AgroNest
 
-In this tutorial we deploy the chatbot I created in [this](https://github.com/python-engineer/pytorch-chatbot) tutorial with Flask and JavaScript.
+*AgroNest* is a comprehensive, farmer-first platform built using *Flask* and *Bootstrap*. It serves as a one-stop digital solution tailored to empower farmers by providing essential services and smart agricultural tools, all in one place.
 
-This gives 2 deployment options:
-- Deploy within Flask app with jinja2 template
-- Serve only the Flask prediction API. The used html and javascript files can be included in any Frontend application (with only a slight modification) and can run completely separate from the Flask App then.
+---
 
-## Initial Setup:
-This repo currently contains the starter files.
+## 🚀 Features
 
-Clone repo and create a virtual environment
-```
-$ git clone https://github.com/python-engineer/chatbot-deployment.git
-$ cd chatbot-deployment
-$ python3 -m venv venv
-$ . venv/bin/activate
-```
-Install dependencies
-```
-$ (venv) pip install Flask torch torchvision nltk
-```
-Install nltk package
-```
-$ (venv) python
->>> import nltk
->>> nltk.download('punkt')
-```
-Modify `intents.json` with different intents and responses for your Chatbot
+### 🛠 Rent a Tool
+Allows farmers to browse and rent agricultural tools on-demand, reducing the cost burden of ownership and ensuring access to the latest technology.
 
-Run
-```
-$ (venv) python train.py
-```
-This will dump data.pth file. And then run
-the following command to test it in the console.
-```
-$ (venv) python chat.py
-```
+### ☁️ Weather Forecast
+Real-time weather updates and forecasts help farmers make informed decisions for crop planning, irrigation, and harvesting.
 
-Now for deployment follow my tutorial to implement `app.py` and `app.js`.
+### 🛒 Farmer E-Commerce
+A specialized e-commerce platform for farmers to buy and sell agricultural goods, tools, seeds, fertilizers, and more.
 
-## Watch the Tutorial
-[![Alt text](https://img.youtube.com/vi/a37BL0stIuM/hqdefault.jpg)](https://youtu.be/a37BL0stIuM)  
-[https://youtu.be/a37BL0stIuM](https://youtu.be/a37BL0stIuM)
+### 🤖 Smart Chatbot
+An AI-powered chatbot trained using custom machine learning models to assist farmers with queries related to farming techniques, government schemes, and platform navigation.
 
-## Note
-In the video we implement the first approach using jinja2 templates within our Flask app. Only slight modifications are needed to run the frontend separately. I put the final frontend code for a standalone frontend application in the [standalone-frontend](/standalone-frontend) folder.
+### 🥔 Potato Crop Disease Detection
+A machine learning model trained to detect diseases in potato crops through image inputs, helping farmers diagnose issues early and reduce crop loss.
 
-## Credits:
-This repo was used for the frontend code:
-https://github.com/hitchcliff/front-end-chatjs
+---
+
+## 🧠 Tech Stack
+
+•⁠  ⁠*Backend:* Flask (Python)
+•⁠  ⁠*Frontend:* Bootstrap 5, HTML, CSS
+•⁠  ⁠*Machine Learning:* Scikit-learn, TensorFlow (for chatbot and disease detection)
+•⁠  ⁠*APIs:* OpenWeatherMap (for weather forecasts)
+
